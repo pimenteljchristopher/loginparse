@@ -1,0 +1,19 @@
+<ion-view view-title="TinderCards">
+<ion-nav-buttons side="right">
+     <button  class="button button-icon icon ion-heart" ui-sref='app.favorites'></button>
+    </ion-nav-buttons>
+
+  <ion-content scroll="false">
+    <td-cards>
+        <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" 
+         on-transition-left="cardTransitionedLeft($index)" on-transition-right="cardTransitionedRight($index)"
+        on-partial-swipe="cardPartialSwipe(amt)" class="card-{{$index}}" >
+          <div class="image" >
+            <div class="no-text">Skip</div>
+            <img ng-src="{{card.image_medium}}">
+            <div class="yes-text"> Favorite</div>
+          </div>
+        </td-card>
+      </td-cards>
+  </ion-content>
+</ion-view>

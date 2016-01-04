@@ -1,0 +1,25 @@
+<ion-modal-view>
+ 
+  <ion-content>
+  <div class="registerScreen">
+    <form ng-submit="doRegister(registerData)">
+  
+        {{error}}
+         <input type="text" ng-model="registerData.username" placeholder="Username">
+         <input type="password" ng-model="registerData.password" placeholder="Password">
+         <input type="text" ng-model="registerData.name" placeholder="Name">
+         <input type="email" ng-model="registerData.email" placeholder="Email">
+         <input type="date" ng-model="registerData.birthdate" placeholder="Birthdate">
+          <select ng-model="registerData.gender">
+             <option selected="selected">Male</option>
+             <option>Female</option>
+          </select>
+        
+         <div class="registerButton">
+          <button type="submit" class="button button-block button-positive">Register</button>
+          <button type="button" class="button button-block button-cancel" ng-click="closeRegister()">Cancel</button>
+        </div>
+    </form>
+   </div>
+  </ion-content>
+</ion-modal-view>

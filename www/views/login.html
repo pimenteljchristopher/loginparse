@@ -1,0 +1,18 @@
+<ion-modal-view>
+
+  <ion-content scroll="false">
+  <div class="loginScreen">
+    <form ng-submit="doLogin(loginData)">
+        {{error}}
+         <input type="text" ng-model="loginData.username" class="loginText" placeholder="Username">
+         <input type="password" ng-model="loginData.password" class="loginText" placeholder="Password">
+        <a ng-click="doReset()" class="link">Forget Password?</a>
+      <div class="loginButton">
+         <button type="submit" class="button button-block button-login" >LOGIN</button>
+         <button type="button"class="button button-block button-cancel" ng-click="closeLogin()">Cancel</button>
+      </div>
+    </form>
+     
+  </div>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,50 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+  <!--   <ion-header-bar class="bar-stable">
+      <h1 class="title">Left</h1>
+    </ion-header-bar> -->
+    <ion-content class="menuScreen" scroll="false">
+     
+        <div menu-close ui-sref="app.profile" class="item item-icon-left ">
+           <i class=" icon ion-person"></i>
+           {{sessionUser.username}}
+        </div>
+    
+      <!--   <div menu-close ui-sref="app.dashboard" class="item item-icon-left">
+           <i class="icon ion-laptop"></i>
+         Dashboard
+        </div> -->
+        <div menu-close ui-sref="app.gallery" class="item item-icon-left">
+           <i class="icon ion-images"></i>
+         Gallery
+        </div>
+        <div menu-close ui-sref="app.map" class="item item-icon-left">
+           <i class="icon ion-map"></i>
+         Map
+        </div>
+        <div menu-close ui-sref="app.tindercards" class="item item-icon-left">
+           <i class="icon ion-clipboard"></i>
+         TinderCards
+        </div>
+        <div menu-close ng-click="doLogout(sessionUser.sessionToken)" class="item item-icon-left">
+           <i class="icon ion-paper-airplane"></i>
+          Logout
+        </div>
+        
+    
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

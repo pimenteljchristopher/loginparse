@@ -1,0 +1,14 @@
+<ion-view view-title="Search">
+  <ion-content scroll="false">
+  <div class="resetScreen">
+    <label>Recover password</label>
+    <span>Provide your account registered email address</span>
+   <form ng-submit="doReset(resetData)">
+        {{error}}
+          <input type="email" ng-model="resetData.email">
+          <button type="submit" class="button button-block button-reset" >Reset</button>
+          <button type="button" class="button button-block button-cancel"  ng-click="doCancel()">Cancel</button>
+    </form>
+  </div>
+  </ion-content>
+</ion-view>

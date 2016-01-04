@@ -1,0 +1,20 @@
+<ion-view view-title="Favorites " class="favorites-page">
+
+  <ion-content>
+
+    <ion-list show-delete="1">
+      <ion-item ng-repeat="song in favorites track by $index" class="item-avatar" ng-click="openSong(song)">
+        <img ng-src="{{song.image_small}}">
+        <h2>{{song.title}}</h2>
+        <p>{{song.artist}}</p>
+        
+
+        <ion-delete-button class="ion-minus-circled"
+                       ng-click="removeSong(song, $index)">
+        </ion-delete-button>
+      </ion-item>
+    </ion-list>
+    
+
+  </ion-content>
+</ion-view>

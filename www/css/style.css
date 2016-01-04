@@ -1,0 +1,61 @@
+
+
+/*homeScreen Design Layout*/
+.homeScreen { background-color: #b0e0e6 ;   }
+.homeScreen .scroll { height: 100%; }
+.homeButton { bottom: 15%; box-sizing: border-box; padding: 0 40px; position: absolute; width: 100%; }
+.homeButton button{border:none; height:60px; padding:0; border-radius:5px; margin:0 0 40px; display:inline-block; font-family: 'Open Sans', sans-serif; text-transform:uppercase; color:#fff; font-weight:600; font-size:20px; }
+.homeButton button.activated, .homeButton button:hover{color:#fff; }
+.homeButton button.button-login{background:#ca0088; opacity: .9;}
+.homeButton button.button-register{background:#0095da;opacity: .9;}
+.homeButton button.button-login.activated{background: #860059;}
+.homeButton button.button-register.activated{background: #00608b;}
+.homeLogo { margin: 10%; }
+.homeLogo img { width: 100%;  background: #66cccc;border-radius: 80%; }
+
+
+
+/*LoginScreen */
+ .loginScreen {background-color: #b0e0e6;width: 100%;height: 100%; }
+ .loginScreen form{background-color: #b0e0e6 ;width: 100%;position: absolute; padding: 10%; margin-top: 20%;font-family: 'Open Sans', sans-serif; }
+ .loginScreen input{  min-width: 100%; margin: 25px 0px 0% 0px; width: 100%;  border: 1px solid #DDDDDD; padding: 10% 5% 10% 5%; border-radius: 10px;font-size:15px;}
+ .loginScreen input:focus {  border-bottom: 2px solid #0095da; }
+ .loginScreen a {width: 100%; margin: 20px 20px; font-size: 17px;display: inline-block;}
+ .loginButton button {opacity: .8; text-transform:uppercase; color:#fff; font-size: 15px;font-family: 'Open Sans', sans-serif;font-weight: bold;} 
+ .loginButton button.activated, .loginButton button:hover{color:#fff; }
+ .loginButton button.button-login{background:#ca0088;} 
+ .loginButton button.button-cancel{background:#77757a;}
+
+
+ /*ResetScreen */
+ .resetScreen {width: 100%;position: absolute; padding: 10%; margin-top: 30%;font-family: 'Open Sans', sans-serif; }
+ .resetScreen input{  min-width: 100%; margin: 25px 0px 0% 0px; width: 100%;  border: 1px solid #DDDDDD; padding: 10% 5% 10% 5%; border-radius: 10px;font-size:15px;}
+ .resetScreen input:focus {  border-bottom: 2px solid #0095da; }
+ .resetScreen label {  font-size: 20px; display:block;clear:both;}
+ .resetScreen button{opacity: .8; text-transform:uppercase; color:#fff; font-size: 15px;font-family: 'Open Sans', sans-serif;font-weight: bold;border-radius: 2px;}
+ .resetScreen button.activated, .resetScreen button:hover{color:#fff; }
+ .resetScreen button.button-reset{background:#ca0088;} 
+ .resetScreen button.button-cancel{background:#77757a; }
+
+
+ /*Registraion Screen */
+ .registerScreen {background-color: #b0e0e6;width: 100%;height: 100%;  }
+ .registerScreen form{width: 100%;position: absolute; padding: 10%; margin-top: 5%;font-family: 'Open Sans', sans-serif; }
+ .registerScreen input{  min-width: 100%; margin: 10px 0px 0% 0px; width: 100%;  border: 1px solid #DDDDDD; padding: 8% 5% 8% 5%; border-radius: 10px;font-size:15px;}
+ .registerScreen select{  min-width: 100%; margin: 10px 0px 0% 0px; width: 100%;  border: 1px solid #DDDDDD; padding: 5% 5% 5% 5%; border-radius: 10px;font-size:15px;}
+ .registerScreen input:focus ,select:focus{  border-bottom: 2px solid #0095da; }
+ .registerScreen a {width: 100%; margin: 20px 20px; font-size: 17px;display: inline-block;}
+ .registerButton button {opacity: .8; text-transform:uppercase; color:#fff; font-size: 15px;font-family: 'Open Sans', sans-serif;font-weight: bold; border-radius: 2px;} 
+ .registerButton button.activated, .registerButton button:hover{color:#fff; }
+ .registerButton button.button-register{background:#ca0088;} 
+ .registerButton button.button-cancel{background:#77757a;}
+  
+  /*Submenu Screen */
+ .menuScreen {background: #003838;}
+ .menuScreen div{background: #003838; color: white; border: none;}
+ .menuScreen div:hover{background: #003838; color: white; }
+ /*Profile Screen */
+ .profileScreen {font-family: 'Open Sans', sans-serif;font-size: 10px; width: 100%; padding: 5% 5% 5% 5%;}
+ .profileScreen label{ display: inline-block; border: 1px solid #e5f0f0; border-radius: 2px;width: 100%; min-height: 40px; height: 100%;  margin: 10px 0px 0% 0px; padding: 5% 14%; color:#001616;}
+ .profileScreen input{display: inline-block;width: 100%; min-height: 100%; height: 100%;  margin: 0px 0px 0% 0px; color:#001616;}
+ .profileScreen select{  min-width: 100%; margin: 10px 0px 0% 0px; width: 100%;  border: 1px solid #DDDDDD; padding: 5% 5% 5% 5%; border-radius: 10px;}

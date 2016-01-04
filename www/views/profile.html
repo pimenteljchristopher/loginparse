@@ -1,0 +1,22 @@
+<ion-view view-title=" {{sessionUser.username}}">
+	 <ion-nav-buttons side="right">
+     <button  class="button button-icon icon ion-edit" ui-sref='app.profile-edit'></button>
+    </ion-nav-buttons>
+  
+  <ion-content >
+  <div class="profileScreen">
+  
+   
+
+   
+   <label class="item item-icon-left"> <i class=" icon ion-person"></i>{{sessionUser.username}}</label>
+   <label class="item item-icon-left"> <i class=" icon ion-man"></i>{{sessionUser.name}}</label>
+   <label class="item item-icon-left"> <i class=" icon ion-email"></i>{{sessionUser.email}}</label>
+   <label class="item item-icon-left"> <i class=" icon ion-person-stalker"></i>{{sessionUser.gender}}</label>
+   <label class="item item-icon-left"> <i class=" icon ion-calendar"></i>{{sessionUser.birthdate.iso}}</label>
+   <label class="item item-icon-left"> <i class=" icon ion-locked"></i>Change</label>
+   <label>Created:{{sessionUser.createdAt}} <br>Updated:{{sessionUser.updatedAt}} <br>Token:{{sessionUser.sessionToken}} <br>ObjectId:{{sessionUser.objectId}}</label>
+  </div>
+   
+  </ion-content>
+</ion-view>

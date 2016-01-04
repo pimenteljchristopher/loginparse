@@ -1,0 +1,20 @@
+<ion-view view-title="Edit">
+<ion-nav-bar>
+    <ion-nav-back-button class="button-clear" >
+      Cancel
+  </ion-nav-back-button>
+    <ion-nav-buttons side="right">
+     <button  class="button button-icon " ng-click="updateUser(sessionUser.objectId,sessionUser.sessionToken,sessionUser)">Save</button>
+    </ion-nav-buttons>
+    </ion-nav-bar>
+    
+  <ion-content>
+  <div class="profileScreen">
+    <label class="item item-icon-left"><i class=" icon ion-person"></i><input type='text' ng-model="sessionUser.username"/></label>
+    <label class="item item-icon-left"> <i class=" icon ion-man"></i><input type='text' ng-model='sessionUser.name'/></label>
+    <label class="item item-icon-left"> <i class=" icon ion-email"></i><input type='text' ng-model='sessionUser.email'/></label>
+    <label class="item item-icon-left"> <i class=" icon ion-person-stalker"></i><select ng-model='sessionUser.gender'><option>Male</option><option>Female</option></select></label>
+    <label class="item item-icon-left"> <i class=" icon ion-calendar"></i><input type='date' ng-model='sessionUser.birthdate.iso'/></label>
+   </div>	
+  </ion-content>
+</ion-view>
